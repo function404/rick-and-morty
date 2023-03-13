@@ -435,7 +435,7 @@ function App() {
     )
   };
 
-  useEffect(() => setConteudo(listaPersonagem()));
+  useEffect(() => setConteudo(listaPersonagem()), []);
 
   return (
     <div className="App">
