@@ -76,8 +76,6 @@ a:hover {
   color: white;
   overflow: hidden;
   background-color: rgb(60, 62, 68);
-  border: 3px solid rgb(60, 62, 68);
-  box-shadow: 9px 9px rgba(39, 43, 51, 0.2);
   border-radius: 20px;
   margin-bottom: 20px;
   transition: all ease-in-out 600ms;
@@ -85,7 +83,7 @@ a:hover {
 }
 
 .card:hover{
-  transform: scale(.9);
+  transform: scale(1.05);
 }
 
 .char {
