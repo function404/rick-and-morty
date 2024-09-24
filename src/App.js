@@ -30,16 +30,16 @@ function App() {
     return todosPersonagens.map((e) => (
       <div className="card char">
         <div>
-          <img src={e.image} />
+          <img src={e.image} alt={e.name} />
         </div>
         <div>
           <h2>{e.name}</h2>
         </div>
         <div className="char-info">
-          <span>Espécie: {e.species == "Human" ? "Humano" : "Não humano"}</span>
+          <span>Espécie: {e.species === "Human" ? "Humano" : "Não humano"}</span>
         </div>
         <div className="char-info">
-          <span>Gênero: {e.gender == "Male" ? "Masculino" : "Feminino"}</span>
+          <span>Gênero: {e.gender === "Male" ? "Masculino" : "Feminino"}</span>
         </div>
         <div className="lista-secundaria">
           <span>
@@ -52,9 +52,9 @@ function App() {
         <div className="char-info">
           <span>
             Info:{" "}
-            {e.status == "Alive"
+            {e.status === "Alive"
               ? "Vivo"
-              : e.status == "unknown"
+              : e.status === "unknown"
               ? "Desconhecido"
               : "Morto"}
           </span>
