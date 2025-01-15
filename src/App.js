@@ -68,6 +68,7 @@ function App() {
       setConteudo(await listaPersonagem());
     }
     carregar()
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [busca]);
 
   return (
